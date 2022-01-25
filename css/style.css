@@ -24,3 +24,50 @@ body{
     max-width: 1180px;
     margin: 0 auto;
 }
+
+.fl-left{float: left;}
+.fl-right{float: right;}
+.in-block{display: inline-block;}
+
+/* Classe generica per tutti i button */
+.btn{
+    border: none;
+    color: white;
+    background-color: #0061ff;
+    padding: 12px 20px;
+}
+
+/* Tolgo la formattazione di base a tutti gli a */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Altezza header e altezza interlinea (riga) dell'header */
+header section#header-nav{
+    line-height: 75px;
+    font-size: 0.9em;
+}
+
+/* Tutti i 'li' della nav sono disposti in orizzontale */
+header nav ul li{
+    display: inline;
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+header .logo-img,
+header button{
+    margin: 0 15px 0 12px;
+}
+
+.logo-img img{
+    vertical-align: middle;
+}
+
+header section#jumbotron{
+    height: 500px;
+    background-color: #b4d0e7;
+}
+
+
