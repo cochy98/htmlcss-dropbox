@@ -1,0 +1,26 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Font per tutto il body */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Reset utilizzato con float, per evitare il collasso dei blocchi */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Container con larghezze specificate in ogni casistica e posto al centro della pagina */
+.container{
+    width: 85%;
+    min-width: 820px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
