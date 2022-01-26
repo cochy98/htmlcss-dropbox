@@ -67,20 +67,28 @@
         </section>
 
         <!-- Container con una width minore rispetto all'header -->
-        <section class="container">
+        <section id="plans" class="container clearfix">
             <div class="plans-type-price">
                 <h2>Trova il piano Dropbox Business Che fa per te</h2>
-                <input type="radio">Fatturazione mensile
+                <div class="input">
+                    <input type="radio" id="mensile" checked>
+                    <label for="mensile">Fatturazione mensile</label> 
+                </div>
+                <div class="input">
+                    <input type="radio" id="annuale">
+                    <label for="annuale">Fatturazione annuale</label> 
+                </div>
+                    
             </div>
             
             <!-- Card piano Professional -->
-            <div class="plan-card"></div>
+            <div class="plan-card fl-left"></div>
 
             <!-- Card piano Standard -->
-            <div class="plan-card"></div>
+            <div class="plan-card fl-left"></div>
             
             <!-- Card piano Advanced -->
-            <div class="plan-card"></div>
+            <div class="plan-card fl-left"></div>
             
             <!-- Card piano Enterprise -->
             <div class="plan-card p-card-full-width"></div>
