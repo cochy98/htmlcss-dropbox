@@ -44,6 +44,7 @@ body{
     color: white;
     background-color: #0061ff;
     padding: 12px 20px;
+    text-align: center;
 }
 
 .btn-large {
@@ -51,10 +52,8 @@ body{
     padding: 10px 24px;
 }
 
-/* Tolgo la formattazione di base a tutti gli a */
-a{
-    text-decoration: none;
-    color: black;
+p>.fa-check, a{
+    color: #0061ff;
 }
 
 /* Altezza header e altezza interlinea (riga) dell'header */
@@ -68,6 +67,11 @@ header nav ul li{
     display: inline;
     list-style-type: none;
     margin: 0 15px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
 }
 
 header .logo-img,
@@ -134,13 +138,77 @@ section#plans .input{
 }
 
 section#plans .plan-card{
-    margin-top: 20px;
-    background-color: chartreuse;
-    border: 1px solid black;
+    margin-top: 45px;
+    border: 1px solid grey;
     width: calc((100% - 120px)/3);
-    height: 600px;
+    min-height: 1000px;
 }
 
 .plan-card:nth-of-type(3){
     margin: 0 60px;
-}  
+} 
+
+section#plans .p-card-full-width{
+    width: 100%;
+}
+
+.plan-card .type,
+.plan-card-content .min-hr{
+    border-bottom: grey 1px solid;
+    text-align: center;
+}
+
+.plan-card .type{
+    padding: 14px 0;
+}
+
+section#plans p{
+    font-size: .9em;
+}
+
+section#plans p,
+section#plans h4{
+    margin-bottom: 15px;
+}
+
+section#plans h3{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+.plan-card-content span{
+    display: block;
+    font-weight: bold;
+    padding: 7px 0 45px;  
+}
+
+/* hr orizzontale che separa le due section */
+div.min-hr{
+    width: 60px;
+    margin: 30px 0 45px;
+}
+
+div.min-hr,
+.plan-card-content span{
+    color: grey;
+}
+
+.plan-card-content {
+    padding: 32px 32px;
+}
+
+div.btn {
+    margin: 50px 0 35px;
+}
+
+.p-card-maxi-content{
+    position: relative;
+    padding: 32px;
+}
+
+.p-card-maxi-content .btn{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    padding: 12px 75px;
+}
