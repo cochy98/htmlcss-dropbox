@@ -38,6 +38,10 @@ body{
 .fl-right{float: right;}
 .in-block{display: inline-block;}
 
+h2{
+    font-size: 2em;
+}
+
 h3{
     font-size: 1.5em;
     padding-bottom: 13px;
@@ -71,14 +75,15 @@ section#jumbotron{
 section#jumbotron,
 section#plans,
 section#image,
-section#cards{
+section#cards,
+section#partner{
     margin-bottom: 150px;
 }
 
-section#cards{
-    height: 500px;
+section#partner{
+    height: 600px;
     background-color: lightsalmon;
-}
+} 
 /* !FINE Regole base */
 
 /* Altezza header e altezza interlinea (riga) dell'header */
@@ -144,7 +149,6 @@ section#jumbotron h1 {
 }
 
 section#plans h2 {
-    font-size: 2em;
     padding: 25px 0 50px;
 }
 
@@ -250,4 +254,28 @@ section#image button{
     border: 1px solid black;
     background-color: white;
     color: black;
+}
+
+section#cards .card{
+    width: calc((100% - 120px)/3);
+    margin: 45px 0 30px;
+    height: 560px;
+}
+
+section#cards .margin-l-r{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+section#cards img{
+    width: 100%;
+}
+
+/* Parte del paragrafo sottolineata */
+section#cards p>span{
+    text-decoration: underline;
+}
+
+section#partner .container{
+    background-color: yellow;
 }
