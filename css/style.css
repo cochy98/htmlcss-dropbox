@@ -61,12 +61,21 @@ h3{
     padding: 10px 24px;
 }
 
+/* hr orizzontale che separa le due section */
+.min-hr{
+    width: 60px;
+    margin: 30px 0 45px;
+    border-bottom: 1px solid lightgray;
+}
 
 p>.fa-check, a{
     color: #0061ff;
 }
 
-.bg-teal{background-color: #a2d39b;}
+.bg-teal{
+    background-color: #a2d39b;
+    border: 12px solid #d0e9cd;
+}
 .bg-violet{background-color: #61082b;}
 .bg-light-blue{background-color: #0093ce;}
 .bg-light-red{background-color: #ff1c1c;}
@@ -87,6 +96,10 @@ section#image,
 section#cards,
 section#partner{
     margin-bottom: 150px;
+}
+
+section#partner{
+    margin-top: 40px;
 }
 
 section#answers{
@@ -186,8 +199,7 @@ section#plans .plan-f-width{
     margin-top: 45px;
 }
 
-section#plans .type,
-.plan-sm-content .min-hr{
+section#plans .type{
     border-bottom: 1px solid lightgray;
     text-align: center;
 }
@@ -211,13 +223,6 @@ section#plans h4{
     padding: 7px 0 45px;  
 }
 
-/* hr orizzontale che separa le due section */
-div.min-hr{
-    width: 60px;
-    margin: 30px 0 45px;
-}
-
-div.min-hr,
 .plan-sm-content span{
     color: grey;
 }
@@ -285,10 +290,6 @@ section#cards p>span{
     text-decoration: underline;
 }
 
-section#partner .container{
-    background-color: yellow;
-}
-
 section#partner .col-square{
     width: 30vw;
     height: 30vw;
@@ -297,8 +298,13 @@ section#partner .col-square{
 section#partner .col-center{
     width: calc(100% - 60vw);
     height: 30vw;
+    padding: 55px;
+    background-color: #f5f5f5;
+    overflow: auto; /* Attiva la scrollbar verticale quando il contenitore non riesce a contenere tutto */
+}
 
-    background-color: chartreuse;
+.col-center>img{
+    width: 30%;
 }
 
 .col-square .logo-partner{
@@ -316,6 +322,23 @@ section#partner .col-center{
     transform: translate(-50%, -50%);
 }
 
-.sub-title{
-    width: 35%;
+.container .sub-title{
+    width: 40%;
+}
+
+.container .sub-title>h2 {
+    padding-bottom: 20px;
+}
+
+section#partner .container{
+    padding: 100px 0;
+    color: #61082b;
+}
+
+
+
+section#partner button.btn{
+    color: black;
+    background-color: white;
+    padding: 12px 75px;
 }
