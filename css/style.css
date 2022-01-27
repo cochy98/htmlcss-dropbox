@@ -38,6 +38,11 @@ body{
 .fl-right{float: right;}
 .in-block{display: inline-block;}
 
+h3{
+    font-size: 1.5em;
+    padding-bottom: 13px;
+}
+
 /* Classe generica per tutti i button */
 .btn{
     border: none;
@@ -138,11 +143,15 @@ section#plans .input{
 }
 
 section#plans .plan-card{
-    margin-top: 45px;
     border: 1px solid grey;
     width: calc((100% - 120px)/3);
-    min-height: 1000px;
+    min-height: 1050px;
+    margin-top: 45px;
+    margin-bottom: 35px;
+    /* margin: 45px 0 35px; */
 }
+
+
 
 .plan-card:nth-of-type(3){
     margin: 0 60px;
@@ -150,15 +159,17 @@ section#plans .plan-card{
 
 section#plans .p-card-full-width{
     width: 100%;
+    border: 1px solid gray;
+    margin-bottom: 150px;
 }
 
-.plan-card .type,
+section#plans .type,
 .plan-card-content .min-hr{
     border-bottom: grey 1px solid;
     text-align: center;
 }
 
-.plan-card .type{
+section#plans .type{
     padding: 14px 0;
 }
 
@@ -169,11 +180,6 @@ section#plans p{
 section#plans p,
 section#plans h4{
     margin-bottom: 15px;
-}
-
-section#plans h3{
-    font-size: 1.5em;
-    padding-bottom: 10px;
 }
 
 .plan-card-content span{
@@ -212,3 +218,22 @@ div.btn {
     right: 32px;
     padding: 12px 75px;
 }
+
+section#image .image{
+    width: 50%;
+}
+
+section#image .image img{
+    width: 100%;
+}
+
+section#image .description-image{
+    width: 45%;
+    
+    background-color: red;
+    height: 300px;
+}
+
+/* p {
+    line-height: 1.7em;
+} */
