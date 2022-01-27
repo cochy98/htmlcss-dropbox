@@ -57,9 +57,29 @@ h3{
     padding: 10px 24px;
 }
 
+
 p>.fa-check, a{
     color: #0061ff;
 }
+
+/* !Regole base per le varie section */
+section#jumbotron{
+    height: 750px;
+    background-color: #b4d0e7;
+}
+
+section#jumbotron,
+section#plans,
+section#image,
+section#cards{
+    margin-bottom: 150px;
+}
+
+section#cards{
+    height: 500px;
+    background-color: lightsalmon;
+}
+/* !FINE Regole base */
 
 /* Altezza header e altezza interlinea (riga) dell'header */
 header{
@@ -86,15 +106,6 @@ header button{
 
 .logo-img img{
     vertical-align: middle;
-}
-
-section#jumbotron{
-    height: 750px;
-    background-color: #b4d0e7;
-}
-
-section#plans{
-    background-color: burlywood;
 }
 
 section#jumbotron h1 {
@@ -134,7 +145,7 @@ section#jumbotron h1 {
 
 section#plans h2 {
     font-size: 2em;
-    padding: 170px 0 50px;
+    padding: 25px 0 50px;
 }
 
 section#plans .input{
@@ -142,30 +153,29 @@ section#plans .input{
     margin: 0 20px 0 0;
 }
 
-section#plans .plan-card{
-    border: 1px solid grey;
+section#plans .plan-sm,
+section#plans .plan-f-width{
+    border: 1px solid lightgrey;
+}
+
+section#plans .plan-sm{
     width: calc((100% - 120px)/3);
     min-height: 1050px;
     margin-top: 45px;
-    margin-bottom: 35px;
-    /* margin: 45px 0 35px; */
 }
 
-
-
-.plan-card:nth-of-type(3){
+.plan-sm:nth-of-type(3){
     margin: 0 60px;
 } 
 
-section#plans .p-card-full-width{
+section#plans .plan-f-width{
     width: 100%;
-    border: 1px solid gray;
-    margin-bottom: 150px;
+    margin-top: 35px;
 }
 
 section#plans .type,
-.plan-card-content .min-hr{
-    border-bottom: grey 1px solid;
+.plan-sm-content .min-hr{
+    border-bottom: 1px solid lightgray;
     text-align: center;
 }
 
@@ -182,7 +192,7 @@ section#plans h4{
     margin-bottom: 15px;
 }
 
-.plan-card-content span{
+.plan-sm-content span{
     display: block;
     font-weight: bold;
     padding: 7px 0 45px;  
@@ -195,11 +205,11 @@ div.min-hr{
 }
 
 div.min-hr,
-.plan-card-content span{
+.plan-sm-content span{
     color: grey;
 }
 
-.plan-card-content {
+.plan-sm-content {
     padding: 32px 32px;
 }
 
@@ -207,12 +217,12 @@ div.btn {
     margin: 50px 0 35px;
 }
 
-.p-card-maxi-content{
+.plan-fw-content{
     position: relative;
     padding: 32px;
 }
 
-.p-card-maxi-content .btn{
+.plan-fw-content .btn{
     position: absolute;
     top: 32px;
     right: 32px;
@@ -229,11 +239,15 @@ section#image .image img{
 
 section#image .description-image{
     width: 45%;
-    
-    background-color: red;
-    height: 300px;
 }
 
-/* p {
+section#image p {
     line-height: 1.7em;
-} */
+} 
+
+section#image button{
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
