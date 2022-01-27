@@ -66,6 +66,15 @@ p>.fa-check, a{
     color: #0061ff;
 }
 
+.bg-teal{background-color: #a2d39b;}
+.bg-violet{background-color: #61082b;}
+.bg-light-blue{background-color: #0093ce;}
+.bg-light-red{background-color: #ff1c1c;}
+.bg-red{background-color: #d5001f;}
+.bg-blue-sky{background-color: #b4d0e7;}
+.bg-blue{background-color: #0d2481;}
+.bg-yellow{background-color: #ffd830;}
+
 /* !Regole base per le varie section */
 section#jumbotron{
     height: 750px;
@@ -80,8 +89,8 @@ section#partner{
     margin-bottom: 150px;
 }
 
-section#partner{
-    height: 600px;
+section#answers{
+    height: 500px;
     background-color: lightsalmon;
 } 
 /* !FINE Regole base */
@@ -174,7 +183,7 @@ section#plans .plan-sm{
 
 section#plans .plan-f-width{
     width: 100%;
-    margin-top: 35px;
+    margin-top: 45px;
 }
 
 section#plans .type,
@@ -278,4 +287,35 @@ section#cards p>span{
 
 section#partner .container{
     background-color: yellow;
+}
+
+section#partner .col-square{
+    width: 30vw;
+    height: 30vw;
+}
+
+section#partner .col-center{
+    width: calc(100% - 60vw);
+    height: 30vw;
+
+    background-color: chartreuse;
+}
+
+.col-square .logo-partner{
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+
+.logo-partner>img{
+    width: 60%;
+    filter: invert(100%); /* Inverte il logo da nero a bianco */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sub-title{
+    width: 35%;
 }
