@@ -1,0 +1,501 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Font per tutto il body */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Reset utilizzato con float, per evitare il collasso dei blocchi */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Container con larghezze specificate in ogni casistica e posto al centro della pagina */
+.container{
+    width: 75%;
+    min-width: 650px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* Container con larghezza più grande */
+.large-container{
+    width: 85%;
+    min-width: 750px;
+    max-width: 1300px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.fl-left{float: left;}
+.fl-right{float: right;}
+.in-block{display: inline-block;}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.5em;
+    padding-bottom: 13px;
+}
+
+/* Classe generica per tutti i button */
+.btn{
+    border: none;
+    color: white;
+    background-color: #0061ff;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+/* Classe aggiuntiva per i button */
+.btn-large {
+    font-size: 1.1em;
+    padding: 10px 24px;
+}
+
+/* hr orizzontale che separa le due section */
+.min-hr{
+    width: 60px;
+    margin: 30px 0 45px;
+    border-bottom: 1px solid lightgray;
+}
+
+p>.fa-check, a{
+    color: #0061ff;
+}
+
+.bg-teal{
+    background-color: #a2d39b;
+    border: 12px solid #d0e9cd;
+}
+.bg-violet{background-color: #61082b;}
+.bg-light-blue{background-color: #0093ce;}
+.bg-light-red{background-color: #ff1c1c;}
+.bg-red{background-color: #d5001f;}
+.bg-blue-sky{background-color: #b4d0e7;}
+.bg-blue{background-color: #0d2481;}
+.bg-yellow{background-color: #ffd830;}
+
+/* ! INIZIO Regole base per le varie section */
+section#jumbotron{
+    height: 750px;
+    background-color: #b4d0e7;
+}
+
+section#jumbotron,
+section#plans,
+section#image,
+section#cards,
+section#partner,
+section#answers{
+    margin-bottom: 150px;
+}
+
+section#partner{
+    margin-top: 40px;
+}
+/* ! FINE Regole base per le varie section */
+
+/* ! INIZIO regole css specifiche per l'header */
+/* Altezza header e altezza interlinea (riga) dell'header */
+header{
+    line-height: 75px;
+    font-size: 0.9em;
+}
+
+/* Tutti i 'li' della nav sono disposti in orizzontale */
+header nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+/* I link della nav non sono sottolineati e cambiano colore in nero */
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Margine left/right per il logo e il button dell'header */
+header .logo-img,
+header button{
+    margin: 0 15px 0 12px;
+}
+
+/* Il logo dell'header viene allineato verticalmente rispetto al testo */
+.logo-img img{
+    vertical-align: middle;
+}
+/* ! FINE regole css specifiche per l'header */
+
+/* ! INIZIO regole css specifiche section jumbotron */
+/* Il titolo del jumbotron ha un font maggiorato e un padding top/bottom */
+section#jumbotron h1 {
+    font-size: 4.2em;
+    padding: 60px 0 45px;
+}
+
+/* La descrizione del jumbo prende il 30% dello spazio a disposizione e il testo ha un interlinea maggiorata */
+.jumbo-desc {
+    width: 30%;
+    line-height: 1.5em;
+    padding-right: 33px;
+}
+
+/* Il box dell'immagine del jumbo prende il restante 70% dello spazio a disposizione */
+.jumbo-img{
+    width: 70%;
+    text-align: right;
+}
+
+/* L'immagine del jumbo prende il 100% della grandezza del box padre */
+.jumbo-img img{
+    width: 100%;
+}
+
+/*  ? Inizio regole di formattazione del testo della section */
+.jumbo-desc>p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.jumbo-desc span{
+    display: block;
+    font-size: 0.8em;
+    padding: 5px 0 30px;
+}
+
+.jumbo-desc i{
+    font-size: 2em;
+}
+/*  ? Fine regole di formattazione del testo della section */
+/* ! FINE regole css specifiche section jumbotron */
+
+/* ! INIZIO regole css specifiche section plans */
+/* Padding top/bottom per il titolo della section */
+section#plans h2 {
+    padding: 25px 0 50px;
+}
+
+/* Posiziono su una sola riga gli input radio della section e li distanzio tra di loro */
+section#plans .input{
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+/* Bordi per i plan box della section */
+section#plans .plan-sm,
+section#plans .plan-f-width{
+    border: 1px solid lightgrey;
+}
+
+/* I plan verticali avranno una larghezza a seconda dello schermo e un'altezza minima */
+section#plans .plan-sm{
+    width: calc((100% - 120px)/3);
+    min-height: 1050px;
+    margin-top: 45px;
+}
+
+/* Il plan centrale avrà dei margini ai lati */
+.plan-sm:nth-of-type(3){
+    margin: 0 60px;
+} 
+
+/* Il plan orizzontale prende una larghezza del 100% e viene distanziato dagli altri */
+section#plans .plan-f-width{
+    width: 100%;
+    margin-top: 45px;
+}
+
+/* ? Inizio regole di formattazione dei plans */
+section#plans .type{
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+}
+
+section#plans .type{
+    padding: 14px 0;
+}
+
+section#plans p{
+    font-size: .9em;
+}
+
+section#plans p,
+section#plans h4{
+    margin-bottom: 15px;
+}
+
+.plan-sm-content span{
+    display: block;
+    font-weight: bold;
+    padding: 7px 0 45px;  
+}
+
+.plan-sm-content span{
+    color: grey;
+}
+
+.plan-sm-content {
+    padding: 32px 32px;
+}
+
+div.btn {
+    margin: 50px 0 35px;
+}
+
+.plan-fw-content{
+    position: relative;
+    padding: 32px;
+}
+/* ? Fine regole di formattazione dei plans */
+
+/* Il button del plan orizzontale viene posizionato a destra con absolute */
+.plan-fw-content .btn{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    padding: 12px 75px;
+}
+/* ! INIZIO regole css specifiche section plans */
+
+/* ! INIZIO regole css specifiche section image */
+/* Il box image prende il 50% della larhezza a disposizione */
+section#image .image{
+    width: 50%;
+}
+
+/* L'immagine prende il 100% dello spazio a disposizione */
+section#image .image img{
+    width: 100%;
+}
+
+/* Il box con le descrizioni prende il 45% della larhezza a disposizione, il restante 5% sarà gutter */
+section#image .description-image{
+    width: 45%;
+}
+
+/* I paragrafi della section avranno un interlinea maggiorata */
+section#image p {
+    line-height: 1.7em;
+} 
+
+/* Stilizzo il button della section */
+section#image button{
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+/* ! FINE regole css specifiche section image */
+
+/* ! INIZIO regole css specifiche section cards */
+/* Ogni card avrà un larghezza a seconda dello schermo, un altezza fissa e un margine top/bottom */
+section#cards .card{
+    width: calc((100% - 120px)/3);
+    margin: 45px 0 30px;
+    height: 560px;
+}
+
+/* Le card centrali avranno anche un margine laterale */
+section#cards .margin-l-r{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/* L'immagine della card occupa il 100% dello spazio a disposizione */
+section#cards img{
+    width: 100%;
+}
+
+/* Parte del paragrafo sottolineata */
+section#cards p>span{
+    text-decoration: underline;
+}
+/* ! FINE regole css specifiche section cards */
+
+/* ! INIZIO regole css specifiche section partner */
+/* Do una larhezza massima a titolo della section per far si che viene spezzato su due righe */
+.container .sub-title{
+    width: 40%;
+}
+
+/* Padding-bottom per il titolo della section */
+.container .sub-title>h2 {
+    padding-bottom: 20px;
+}
+
+/* Le due colonne laterari prendono una grandezza 30vw*30vw, così sono sempre quadrate */
+section#partner .col-square{
+    width: 30vw;
+    height: 30vw;
+}
+
+/* La colonna centrale prenderà la larghezza restante  */
+section#partner .col-center{
+    width: calc(100% - 60vw);
+    height: 30vw;
+    padding: 55px;
+    background-color: #f5f5f5;
+    overflow: auto; /* Attiva la scrollbar verticale quando il contenitore non riesce a contenere tutto */
+}
+
+/* Le colonne laterali (quadrate) avranno a loro volta 4 box quadrati all'interno, con una grandezza 50%*50%  */
+.col-square .logo-partner{
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+
+/* L'immagine occupera il 60% dello spazio a disposizione, con la proprità position & transform viene messa al centro */
+.logo-partner>img{
+    width: 60%;
+    filter: invert(100%); /* Inverte il logo da nero a bianco */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* L'immagine logo della colonna centrale prende il 30% dello spazio a disposizione */
+.col-center>img{
+    width: 30%;
+}
+
+/* I testi del containter, contenuto nella section partner avranno un colore viola e un padding top/bottom */
+section#partner .container{
+    padding: 100px 0;
+    color: #61082b;
+}
+
+/* Stilizzo il button della section partner */
+section#partner button.btn{
+    color: black;
+    background-color: white;
+    padding: 12px 75px;
+}
+/* ! FINE regole css specifiche section partner */
+
+/* ! INIZIO regole css specifiche section answers */
+/* Il titolo della section & ogni div 'question' avranno un border-bottom */
+section#answers h3,
+section#answers .answer-question{
+    border-bottom: 1px solid lightgray;
+}
+
+/* Con un po di padding distanzio il titolo della section dal contenuto */
+section#answers h3{
+    padding-bottom: 35px;
+}
+
+/* Ogni div 'question' assume una grandezza maggiore grazie a del padding sopra e sotto */
+section#answers .answer-question{
+    padding: 30px 0;
+}
+
+/* Padding-right per le freccettine sulla destra */
+section#answers i{
+    padding-right: 32px;    
+}
+/* ! FINE regole css specifiche section answers */
+
+/* ! INIZIO regole css specifiche footer */
+footer{
+    background-color: #000000;
+    padding: 100px 0 40px;
+}
+
+section#footer-top {
+    line-height: 1.7em;
+    padding-bottom: 70px;
+}
+
+/* Ogni nav occupa il 20% in larghezza dello spazio a disposizione */
+section#footer-top>nav{
+    width: 20%;
+}
+
+/* Tolgo lo stile di default alle liste */
+section#footer-top li{
+    list-style-type: none;
+}
+
+/* Font rimpicciolito per i link delle liste */
+section#footer-top li a {
+    text-decoration: none;
+    font-size: .9em;
+}
+
+/* Per tutto il footer & i link del footer il colore del testo è bianco */
+footer,
+footer li a{
+    color: white;
+}
+
+/* Tutti gli h4 delle nav del footer avranno un font maggiore e un padding bottom */
+footer h4.nav-title {
+    font-size: 1.4em;
+    padding-bottom: 14px;
+}
+
+/* Aumento la larghezza dell'hr che separa footer-top dal footer-bottom  */
+#footer-bottom>.min-hr{
+    width: 140px;
+}
+/* ! FINE regole css specifiche footer */
+
+/* ? Aggiunta header fixed */
+header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+}
+
+main{
+    margin-top: 75px;
+}
+
+/* ? Bordo inferiore quando il 'li' è in hover o e attivo */
+header nav ul li:hover,
+header nav ul li:active{
+    border-bottom: 2px solid black;
+}
+
+/* ? Hover sui 'li' del nav footer */
+footer nav li:hover,
+footer nav li:active{
+    text-decoration: underline;
+}
+
+/* ? INIZIO Dropodown su nav header */
+.dropdown:hover .dropdown-content{
+    display: block;  
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 7px 16px;
+}
+
+.dropdown-content p{
+    line-height: 2.3em;
+}
+/* ? FINE Dropodown su nav header */
