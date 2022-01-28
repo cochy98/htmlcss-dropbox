@@ -94,18 +94,14 @@ section#jumbotron,
 section#plans,
 section#image,
 section#cards,
-section#partner{
+section#partner,
+section#answers{
     margin-bottom: 150px;
 }
 
 section#partner{
     margin-top: 40px;
 }
-
-section#answers{
-    height: 500px;
-    background-color: lightsalmon;
-} 
 /* !FINE Regole base */
 
 /* Altezza header e altezza interlinea (riga) dell'header */
@@ -335,10 +331,30 @@ section#partner .container{
     color: #61082b;
 }
 
-
-
 section#partner button.btn{
     color: black;
     background-color: white;
     padding: 12px 75px;
+}
+
+section#answers h3,
+section#answers .answer-question{
+    border-bottom: 1px solid lightgray;
+}
+
+section#answers h3{
+    padding-bottom: 35px;
+}
+
+section#answers .answer-question{
+    padding: 30px 0;
+}
+
+section#answers i{
+    padding-right: 32px;    
+}
+
+footer{
+    height: 400px;
+    background-color: #000000;
 }
